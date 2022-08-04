@@ -25,7 +25,7 @@ jobs:
       run: npm run build
 
 
-    - name: 🚚 Composer install
+    - name: 🚚 Set php version
       uses: shivammathur/setup-php@v2
       with:
         php-version: "8.1"
@@ -35,8 +35,8 @@ jobs:
       with:
         dependency-versions: "8.1"
 
-    - name: 🚚 Composer install
-      run: composer install
+#    - name: 🚚 Composer install
+#      run: composer install
 
 #    - name: 🍒 composer install
 #      run: npm install | npm run build
