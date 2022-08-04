@@ -15,8 +15,9 @@ jobs:
       with:
         php-version: "8.1"
     - uses: actions/checkout@v2
+    - name: 🚒 composer install
     - uses: ramsey/composer-install@v2
-#    - name: 🚒 composer install
+    - name: 🚒 npm install
     - uses: bahmutov/npm-install@v1
 
 #    - name: 🍒 composer install
