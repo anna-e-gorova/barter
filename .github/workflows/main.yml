@@ -18,5 +18,5 @@ jobs:
       with:
         server: srv12.host-food.ru
         username: h163155
-        password: ${{ secrets.FTPPAS }}
+        password: isdn1234
         server-dir: /www/barter.diakov.xyz/
