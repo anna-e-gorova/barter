@@ -17,8 +17,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: 🚒 composer install
     - uses: ramsey/composer-install@v2
-    - name: 🚒 npm install
-    - uses: bahmutov/npm-install@v1
+      run: composer install
+#    - name: 🚒 npm install
+#    - uses: bahmutov/npm-install@v1
 
 #    - name: 🍒 composer install
 #      run: npm install | npm run build
