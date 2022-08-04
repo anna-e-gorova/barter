@@ -29,14 +29,12 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: "8.1"
-#    - name: 🚒 composer install
-#    - uses: ramsey/composer-install@v2
-#      with:
-#        dependency-versions: "8.1"
 
-#      run: composer install
-#    - name: 🚒 npm install
-#    - uses: bahmutov/npm-install@v1
+    - name: 🚚 Composer install
+      uses: ramsey/composer-install@v2
+      with:
+        dependency-versions: "8.1"
+      run: composer install
 
 #    - name: 🍒 composer install
 #      run: npm install | npm run build
