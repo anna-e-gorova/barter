@@ -16,7 +16,7 @@ jobs:
     - name: Set Node version to 16
       uses: actions/setup-node@v1
       with:
-        version: 16
+        version: "16.4"
 
     - name: Npm run install
       run: npm install
@@ -34,6 +34,8 @@ jobs:
       uses: ramsey/composer-install@v2
       with:
         dependency-versions: "8.1"
+
+    - name: 🚚 Composer install
       run: composer install
 
 #    - name: 🍒 composer install
