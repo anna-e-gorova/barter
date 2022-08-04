@@ -12,39 +12,27 @@ jobs:
     steps:
     - name: 🚚 Checkout Repository
       uses: actions/checkout@v2
-
     - name: Set Node version to 16
       uses: actions/setup-node@v1
       with:
         version: "16.4"
-
     - name: Npm run install
       run: npm install
-
     - name: Npm run build
       run: npm run build
-
-
     - name: 🚚 Set php version
       uses: shivammathur/setup-php@v2
       with:
         php-version: "8.1"
-
     - name: 🚚 Composer install
       uses: ramsey/composer-install@v2
       with:
         dependency-versions: "8.1"
 
-#    - name: 🚚 Composer install
-#      run: composer install
-
-#    - name: 🍒 composer install
-#      run: npm install | npm run build
-
-#    - name: 📂 Sync files
-#    - uses: SamKirkland/FTP-Deploy-Action@master
-#      with:
-#        server: srv12.host-food.ru
-#        username: h163155
-#        password: isdn1234
-#        server-dir: /www/barter.diakov.xyz/
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@master
+      with:
+        server: srv12.host-food.ru
+        username: h163155
+        password: isdn1234
+        server-dir: /www/barter.diakov.xyz/
