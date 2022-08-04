@@ -15,17 +15,17 @@ jobs:
       with:
         php-version: "8.1"
     - uses: actions/checkout@v2
+    - uses: "ramsey/composer-install@v2"
     - name: 🚒 composer install
-      run: composer install
     - uses: bahmutov/npm-install@v1
 
-    - name: 🍒 composer install
-      run: npm install | npm run build
+#    - name: 🍒 composer install
+#      run: npm install | npm run build
 
-    - name: 📂 Sync files
-    - uses: SamKirkland/FTP-Deploy-Action@master
-      with:
-        server: srv12.host-food.ru
-        username: h163155
-        password: isdn1234
-        server-dir: /www/barter.diakov.xyz/
+#    - name: 📂 Sync files
+#    - uses: SamKirkland/FTP-Deploy-Action@master
+#      with:
+#        server: srv12.host-food.ru
+#        username: h163155
+#        password: isdn1234
+#        server-dir: /www/barter.diakov.xyz/
