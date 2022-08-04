@@ -16,7 +16,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@master
       with:
-        ftp-server: srv12.host-food.ru
-        ftp-username: h163155
-        ftp-password: ${{ secrets.FTPPAS }}
+        server: srv12.host-food.ru
+        username: h163155
+        password: ${{ secrets.FTPPAS }}
         server-dir: /www/barter.diakov.xyz/
