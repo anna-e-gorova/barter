@@ -14,9 +14,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@master
       with:
-        server: srv12.host-food.ru
-        username: h163155
-        password: ${{ secrets.MY_PASS }}
+        ftp-server: srv12.host-food.ru
+        ftp-username: h163155
+        ftp-password: ${{ secrets.FTPPAS }}
         server-dir: /www/barter.diakov.xyz/
